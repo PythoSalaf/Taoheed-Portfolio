@@ -1,11 +1,13 @@
 const Navbar = () => {
   return (
-    <div className="w-full bg-white shadow-lg py-4">
+    <div className="w-full fixed bg-white shadow-lg py-4 ">
       <div className="layout flex items-center justify-between">
         <a href="/">
-          <h2 className="uppercase text-3xl ">Taoheed</h2>
+          <h2 className="uppercase text-xl md:text-2xl lg:text-3xl ">
+            Taoheed
+          </h2>
         </a>
-        <div className="font-secondary text-xl flex items-center gap-x-4">
+        <div className="hidden  font-secondary text-xl md:flex items-center gap-x-4">
           <a href="http://">Home</a>
           <a href="http://">About</a>
           <a href="http://">Skills</a>
@@ -13,7 +15,7 @@ const Navbar = () => {
           <a href="http://">Testimonial</a>
           <a href="http://">Contact</a>
         </div>
-        <button className="border border-[#dadada] px-4 rounded-lg py-[6px]">
+        <button className="border border-[#dadada] px-2 md:px-4 rounded-lg py-[4px] md:py-[6px]">
           Let's talk
         </button>
       </div>

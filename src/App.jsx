@@ -20,7 +20,7 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <div className="flex-grow">
+          <div className="flex-grow pt-[4rem]">
             <Home />
             <About />
             <Portfolio />
