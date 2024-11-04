@@ -14,12 +14,14 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col relative min-h-screen">
       {isLoading ? (
         <Loader />
       ) : (
         <>
-          <Navbar />
+          <div className="w-full fixed z-40">
+            <Navbar />
+          </div>
           <div className="flex-grow pt-[4rem]">
             <Home />
             <About />
