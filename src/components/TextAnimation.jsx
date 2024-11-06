@@ -7,19 +7,19 @@ const TextAnimation = () => {
         preRenderFirstString={true}
         sequence={[
           500,
-          "A Passionate Frontend Developer", // initially rendered starting point
+          "Frontend Developer", // initially rendered starting point
           1000,
-          "A React Enthusiast",
+          "React Enthusiast",
           1000,
-          "A Responsive Web Design Specialist",
+          "Responsive Web Design Specialist",
           1000,
-          "A Performance Optimization Guru",
+          "Performance Optimization Guru",
           1000,
-          "An Accessibility Champion",
+          "Accessibility Champion",
           500,
         ]}
         speed={50}
-        className="text-primary text-xl  md:text-2xl lg:text-3xl font-secondary "
+        className="text-primary text-sm sm:text-lg  md:text-xl lg:text-2xl font-secondary "
         repeat={Infinity}
       />
     </div>
