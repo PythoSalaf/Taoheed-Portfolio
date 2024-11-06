@@ -16,7 +16,7 @@ const Home = () => {
         <div className="w-full text-center my-7">
           <TextAnimation />
         </div>
-        <p className="text-sm md:text-lg lg:text-xl">
+        <p className="text-sm md:text-lg lg:text-2xl">
           A dedicated Frontend Developer with a flair for designing interactive,{" "}
           <br />
           modern web experiences. I blend technical skill with a creative touch{" "}
