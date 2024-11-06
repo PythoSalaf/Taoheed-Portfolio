@@ -7,15 +7,15 @@ const TextAnimation = () => {
         preRenderFirstString={true}
         sequence={[
           500,
-          "Frontend Developer", // initially rendered starting point
+          "A Frontend Developer", // initially rendered starting point
           1000,
-          "React Enthusiast",
+          "A React Enthusiast",
           1000,
-          "Responsive Web Design Specialist",
+          "A Responsive Web Design Specialist",
           1000,
-          "Performance Optimization Guru",
+          "A Performance Optimization Guru",
           1000,
-          "Accessibility Champion",
+          "An Accessibility Champion",
           500,
         ]}
         speed={50}
