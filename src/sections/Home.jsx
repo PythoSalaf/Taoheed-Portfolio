@@ -7,7 +7,7 @@ const Home = () => {
 
       {/* Text content on top */}
       <div className="layout text-center relative z-20 flex flex-col items-center justify-start h-full">
-        <h1 className="text-primary text-2xl font-secondary md:text-3xl">
+        <h1 className="text-primary text-2xl  md:text-3xl">
           Hi, I'm Taoheed Afolabi,
         </h1>
         <h2 className="mt-7 text-2xl md:text-3xl ">
