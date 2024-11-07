@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Footer, Loader, Navbar } from "./components";
-import { About, Home, Portfolio } from "./sections";
+import { About, Home, Portfolio, Skills } from "./sections";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +25,7 @@ function App() {
           <div className="flex-grow pt-[4rem]">
             <Home />
             <About />
+            <Skills />
             <Portfolio />
           </div>
           <Footer />

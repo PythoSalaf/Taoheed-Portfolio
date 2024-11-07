@@ -7,18 +7,16 @@ const Home = () => {
 
       {/* Text content on top */}
       <div className="layout text-center relative z-20 flex flex-col items-center justify-start h-full">
-        <h1 className="text-primary text-xl  md:text-2xl lg:text-2xl">
+        <h1 className="text-black text-xl  md:text-2xl lg:text-2xl">
           Hi, I'm Taoheed Afolabi,
         </h1>
-        {/* <h2 className="mt-7 text-2xl md:text-3xl ">
-          Passionate and Innovative
-        </h2> */}
-        <div className="w-full text-center my-9">
+
+        <div className="w-full text-center my-10">
           <TextAnimation />
         </div>
-        <p className="text-sm md:text-lg lg:text-2xl">
-          A dedicated Frontend Developer with a flair for designing interactive,{" "}
-          modern web
+        <p className="text-base md:text-lg lg:text-2xl">
+          I'm a dedicated Frontend Developer with a flair for designing
+          interactive, modern web
           <br />
           experiences. I blend technical skill with a creative touch to build
           responsive
@@ -31,6 +29,14 @@ const Home = () => {
           and <br />
           inspire. Ready to create impactful digital experiences together! */}
         </p>
+        <div className="mt-20 flex items-center gap-x-6">
+          <button className="bg-primary text-white rounded-xl py-2 px-4">
+            Download CV
+          </button>
+          <button className="bg-primary text-white rounded-xl py-2 px-9">
+            Hire Me
+          </button>
+        </div>
       </div>
     </div>
   );

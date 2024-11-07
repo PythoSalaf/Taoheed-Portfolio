@@ -3,7 +3,7 @@ const Navbar = () => {
     <div className="w-full  bg-white shadow-lg py-4  ">
       <div className="layout flex items-center justify-between">
         <a href="/">
-          <h2 className="uppercase text-xl md:text-2xl lg:text-3xl ">
+          <h2 className="uppercase text-primary text-xl md:text-2xl lg:text-3xl ">
             Taoheed
           </h2>
         </a>

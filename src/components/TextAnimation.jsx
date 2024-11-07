@@ -19,7 +19,7 @@ const TextAnimation = () => {
           500,
         ]}
         speed={50}
-        className="text-primary text-sm sm:text-lg  md:text-2xl lg:text-3xl font-secondary "
+        className="text-primary text-xl  md:text-2xl lg:text-3xl font-secondary "
         repeat={Infinity}
       />
     </div>
