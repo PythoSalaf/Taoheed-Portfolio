@@ -3,7 +3,9 @@ import { AboutIcon } from "../assets";
 const About = () => {
   return (
     <div className="w-full bg-primary pb-5 md:pb-0 pt-7 ">
-      <h1 className="text-3xl text-white text-center">About</h1>
+      <h1 className="text-2xl font-semibold md:text-3xl text-white text-center">
+        About
+      </h1>
       <div className="flex items-start justify-between flex-col md:flex-row gap-9 pt-6 md:pt-12 w-full">
         <div className="w-full ">
           <img
