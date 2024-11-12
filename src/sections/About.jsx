@@ -1,5 +1,6 @@
 import { AboutIcon } from "../assets";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const About = () => {
   return (
     <div className="w-full bg-primary pb-5 md:pb-0 pt-7 ">

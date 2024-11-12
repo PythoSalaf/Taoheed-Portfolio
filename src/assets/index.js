@@ -8,6 +8,7 @@ import NextIcon from "./nextjs.svg";
 import QueryIcon from "./query.svg";
 import GitIcon from "./git.svg";
 import SassIcon from "./sass.svg";
+import Profile from "./profile.svg";
 
 export {
   ReactIcon,
@@ -20,4 +21,5 @@ export {
   QueryIcon,
   GitIcon,
   SassIcon,
+  Profile,
 };

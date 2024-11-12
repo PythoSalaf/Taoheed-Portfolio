@@ -5,7 +5,7 @@ const Skills = () => {
     <div className=" w-full bg-white py-10 font-semibold">
       <h2 className="text-center text-2xl md:text-3xl">Skills & Experiences</h2>
       <div className="w-full mt-10">
-        <div className="w-[90%] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto">
+        <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto">
           {SkillsData.map((item) => (
             <div
               className="w-[95%] mx-auto md:w-full  flex items-center h-16 md:h-20 "

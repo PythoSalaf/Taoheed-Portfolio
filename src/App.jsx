@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Footer, Loader, Navbar } from "./components";
-import { About, Home, Portfolio, Skills } from "./sections";
+import { About, Home, Portfolio, Skills, Testimonial } from "./sections";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +27,7 @@ function App() {
             <About />
             <Skills />
             <Portfolio />
+            <Testimonial />
           </div>
           <Footer />
         </>

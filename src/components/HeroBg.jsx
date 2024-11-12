@@ -1,7 +1,16 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadFull } from "tsparticles";
-import { JavascriptIcon, ReactIcon, ReduxIcon, TailwindIcon } from "../assets"; // Ensure this path is correct
+import {
+  GitIcon,
+  JavascriptIcon,
+  NextIcon,
+  QueryIcon,
+  ReactIcon,
+  ReduxIcon,
+  TailwindIcon,
+  TypescriptIcon,
+} from "../assets"; // Ensure this path is correct
 
 const HeroBg = () => {
   const [init, setInit] = useState(false);
@@ -53,7 +62,7 @@ const HeroBg = () => {
       particles: {
         color: { value: "#ffffff" },
         number: {
-          value: 40,
+          value: 30,
           density: { enable: true, width: 1920, height: 1080 },
         },
         opacity: {
@@ -69,6 +78,10 @@ const HeroBg = () => {
               { src: ReduxIcon, width: 20, height: 20 },
               { src: TailwindIcon, width: 20, height: 20 },
               { src: JavascriptIcon, width: 20, height: 20 },
+              { src: TypescriptIcon, width: 20, height: 20 },
+              { src: QueryIcon, width: 20, height: 20 },
+              { src: NextIcon, width: 20, height: 20 },
+              { src: GitIcon, width: 20, height: 20 },
             ],
           },
         },
