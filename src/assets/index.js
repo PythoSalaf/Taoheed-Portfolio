@@ -9,6 +9,9 @@ import QueryIcon from "./query.svg";
 import GitIcon from "./git.svg";
 import SassIcon from "./sass.svg";
 import Profile from "./profile.svg";
+import Movies from "./movies.svg";
+import Ecommerce from "./ecommerce.svg";
+import Admin from "./admin.svg";
 
 export {
   ReactIcon,
@@ -22,4 +25,7 @@ export {
   GitIcon,
   SassIcon,
   Profile,
+  Movies,
+  Ecommerce,
+  Admin,
 };

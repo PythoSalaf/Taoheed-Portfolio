@@ -5,3 +5,4 @@ export { default as HeroBg } from "./HeroBg";
 export { default as TextAnimation } from "./TextAnimation";
 export { default as TestSlider } from "./TestSlider";
 export { default as ReviewCard } from "./ReviewCard";
+export { default as PortfolioCard } from "./PortfolioCard";

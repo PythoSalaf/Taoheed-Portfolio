@@ -11,6 +11,9 @@ export default {
         primary: ["Montserrat", "sans-serif"],
         secondary: ["Artifika", "serif"],
       },
+      boxShadow: {
+        custom: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+      },
     },
   },
   plugins: [],

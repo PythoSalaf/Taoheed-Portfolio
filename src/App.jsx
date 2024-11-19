@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { Footer, Loader, Navbar } from "./components";
-import { About, Home, Portfolio, Skills, Testimonial } from "./sections";
+import {
+  About,
+  Contact,
+  Home,
+  Portfolio,
+  Skills,
+  Testimonial,
+} from "./sections";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +35,7 @@ function App() {
             <Skills />
             <Portfolio />
             <Testimonial />
+            <Contact />
           </div>
           <Footer />
         </>

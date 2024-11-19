@@ -1,5 +1,8 @@
 import {
+  Admin,
+  Ecommerce,
   GitIcon,
+  Movies,
   NextIcon,
   QueryIcon,
   ReactIcon,
@@ -83,5 +86,59 @@ export const ReviewData = [
     stack: "Backend developer",
     review:
       "Hard working developer. In addition to his technical skils, Taoheed is also an excellent communicator and team player.He is always willing to go the extra mile to complete any given task.",
+  },
+];
+export const PortfolioData = [
+  {
+    id: 1,
+    title: "Dashboard",
+    detail:
+      "I designed the PsychSight Admin Dashboard, streamlining appointment management, enhancing client experience, and ensuring robust security for mental health professionals.",
+    github: "https://github.com/PythoSalaf/psych-admin",
+    livelink: "https://pytho-app.vercel.app/",
+    avater: Admin,
+    stacks: ["Tailwind CSS", "React.js", "Redux Toolkit"],
+  },
+  {
+    id: 2,
+    title: "Movies Web",
+    detail:
+      "The Movies App showcases significant growth in Redux, API consumption, and React development. Excited about ongoing learning, I look forward to applying these skills in future projects.",
+    github: "https://github.com/PythoSalaf/Movie-Web",
+    livelink: "https://movies-webs.vercel.app/",
+    avater: Movies,
+    stacks: ["Tailwind CSS", "React.js", "RTK Query"],
+  },
+
+  {
+    id: 3,
+    title: "job app",
+    detail:
+      "Web application that enables users to search for job openings, and locate available jobs based on their current location.",
+    github: "https://github.com/PythoSalaf/Job-App",
+    livelink: "https://job-app-amber.vercel.app",
+    avater: Admin,
+    stacks: ["React.js", "Styled-Component", "Rapid API", "Redux-Toolkit"],
+  },
+  {
+    id: 4,
+    title: "Ecommerce",
+    detail:
+      "Engaging e-commerce: Platform design drives 20% user engagement surge",
+    github: "https://github.com/PythoSalaf/Ecommerce",
+    livelink: "https://ecommerce-tao.vercel.app",
+    avater: Ecommerce,
+    stacks: ["CSS", "React.js", "Redux-Toolkit"],
+  },
+
+  {
+    id: 6,
+    title: "crypto hub",
+    detail:
+      "My crypto project provides a comprehensive listing of all cryptocurrencies, offering detailed information on each.",
+    github: "https://github.com/PythoSalaf/Crypto-Hub",
+    livelink: "https://b-hub.netlify.app/",
+    avater: crypto,
+    stacks: ["React.js", "RTK Query", "Framer Motion"],
   },
 ];
