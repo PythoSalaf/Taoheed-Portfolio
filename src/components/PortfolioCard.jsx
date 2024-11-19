@@ -22,7 +22,7 @@ const PortfolioCard = ({
         {/* Title and Links */}
         <div className="mt-2 flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-gray-800">{title}</h2>
-          <div className="flex items-center gap-x-4">
+          <div className="flex items-center gap-x-2">
             {/* Live Link */}
             <a
               href={livelink}
