@@ -12,6 +12,7 @@ import Profile from "./profile.svg";
 import Movies from "./movies.svg";
 import Ecommerce from "./ecommerce.svg";
 import Admin from "./admin.svg";
+import Blob from "./blob.svg";
 
 export {
   ReactIcon,
@@ -28,4 +29,5 @@ export {
   Movies,
   Ecommerce,
   Admin,
+  Blob,
 };
