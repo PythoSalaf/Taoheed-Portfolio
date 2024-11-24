@@ -2,7 +2,10 @@ import { HeroBg, TextAnimation } from "../components";
 
 const Home = () => {
   return (
-    <div className="relative w-full h-[64vh] md:h-[80vh] pt-9 md:pt-16 overflow-hidden">
+    <div
+      className="relative w-full h-[64vh] md:h-[80vh] pt-9 md:pt-16 overflow-hidden"
+      id="home"
+    >
       <HeroBg />
 
       {/* Text content on top */}

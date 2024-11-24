@@ -2,7 +2,7 @@ import { TestSlider } from "../components";
 
 const Testimonial = () => {
   return (
-    <div className="bg-primary py-5 w-full">
+    <div className="bg-primary py-5 w-full" id="testimonial">
       <h2 className="text-center text-2xl md:text-3xl text-white">
         Testimonials
       </h2>

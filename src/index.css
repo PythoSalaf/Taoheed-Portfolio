@@ -13,6 +13,11 @@
   }
 }
 
+html {
+  scroll-padding-top: 4rem;
+}
+
 body {
   font-family: "Poppins", serif;
+  scroll-behavior: smooth;
 }

@@ -112,7 +112,7 @@ export const PortfolioData = [
 
   {
     id: 3,
-    title: "job app",
+    title: "Job App",
     detail:
       "Web application that enables users to search for job openings, and locate available jobs based on their current location.",
     github: "https://github.com/PythoSalaf/Job-App",
@@ -133,7 +133,7 @@ export const PortfolioData = [
 
   {
     id: 6,
-    title: "crypto hub",
+    title: "Crypto Hub",
     detail:
       "My crypto project provides a comprehensive listing of all cryptocurrencies, offering detailed information on each.",
     github: "https://github.com/PythoSalaf/Crypto-Hub",

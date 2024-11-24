@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const About = () => {
   return (
-    <div className="w-full bg-primary pb-5 md:pb-0 pt-7 ">
+    <div className="w-full bg-primary pb-5 md:pb-0 pt-7 " id="about">
       <h1 className="text-2xl font-semibold md:text-3xl text-white text-center">
         About
       </h1>
