@@ -1,96 +1,134 @@
 import { useState, useEffect } from "react";
+import { VscThreeBars, VscChromeClose } from "react-icons/vsc";
+// import { resume } from "../Assets";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState("");
-  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
+  const [toggle, setToggle] = useState(false);
+  const [activeSection, setActiveSection] = useState(null); // Track the active section
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      let currentSection = "";
+      const sections = [
+        "home",
+        "about",
+        "skills",
+        "portfolio",
+        "testimonial",
+        "contact",
+      ];
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const scrollPosition = window.scrollY + window.innerHeight / 3;
-
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          currentSection = section.id;
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element && isElementInViewport(element)) {
+          setActiveSection(sectionId);
+          break;
         }
-      });
-
-      if (currentSection !== activeSection) {
-        setActiveSection(currentSection);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run initially to set the active section on load
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    const isElementInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= window.innerHeight / 2 &&
+        rect.bottom >= window.innerHeight / 2
+      );
     };
-  }, [activeSection]);
 
-  useEffect(() => {
-    const activeLink = document.querySelector(`#nav-${activeSection}`);
-    if (activeLink) {
-      const { offsetLeft, offsetWidth } = activeLink;
-      setUnderlineStyle({
-        left: `${offsetLeft}px`,
-        width: `${offsetWidth}px`,
-      });
-    }
-  }, [activeSection]);
+    // Attach scroll listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup scroll listener on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="relative w-full bg-white shadow-lg py-4">
-      <div className="layout flex items-center justify-between">
-        {/* Logo */}
-        <a href="/">
-          <h2 className="uppercase text-primary text-xl md:text-2xl lg:text-3xl">
-            Taoheed
-          </h2>
-        </a>
-
-        {/* Navigation Links */}
-        <div className="relative hidden md:flex items-center gap-x-6 font-secondary text-lg">
-          {[
-            { id: "home", label: "Home" },
-            { id: "about", label: "About" },
-            { id: "skills", label: "Skills" },
-            { id: "portfolio", label: "Portfolio" },
-            { id: "testimonial", label: "Testimonial" },
-            { id: "contact", label: "Contact" },
-          ].map((section) => (
+    <div>
+      <nav className="w-full fixed h-16 top-0 bg-white flex items-center justify-between z-20 shadow-lg">
+        <div className="flex items-center justify-between w-[95%] mx-auto">
+          {/* Logo */}
+          <div className="w-[15%]">
             <a
-              key={section.id}
-              id={`nav-${section.id}`}
-              href={`#${section.id}`}
-              className={`relative ${
-                activeSection === section.id
-                  ? "text-black font-bold"
-                  : "text-gray-600 hover:text-black"
-              } transition-colors duration-300`}
+              href="#home"
+              className="uppercase text-primary text-xl md:text-2xl lg:text-3xl"
             >
-              {section.label}
+              taoheed
             </a>
-          ))}
-          {/* Underline Effect */}
-          <span
-            className="absolute bottom-0 h-[2px] bg-primary transition-all duration-300"
-            style={underlineStyle}
-          ></span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="w-[60%] hidden md:flex items-center justify-center">
+            <ul className="flex items-center gap-4 justify-between font-secondary text-lg  md:w-[80%] lg:w-[60%]">
+              {[
+                { id: "home", label: "Home" },
+                { id: "about", label: "About" },
+                { id: "skills", label: "Skills" },
+                { id: "portfolio", label: "Portfolio" },
+                { id: "testimonial", label: "Testimonial" },
+                { id: "contact", label: "Contact" },
+              ].map((section) => (
+                <li key={section.id}>
+                  <a
+                    href={`#${section.id}`}
+                    className={
+                      activeSection === section.id
+                        ? "text-primary font-bold underline pb-1"
+                        : "text-gray-600 hover:text-primary transition-colors"
+                    }
+                  >
+                    {section.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* CTA Button */}
+          <button className="border border-gray-300 px-4 py-2 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition duration-300">
+            Let's talk
+          </button>
+          {/* Mobile Menu Toggle */}
+          <div
+            className="flex items-center cursor-pointer gap-2 bg-white md:hidden px-[6px] py-[3px] text-primary border-[1.9px] border-primary rounded-xl"
+            onClick={() => setToggle(!toggle)}
+          >
+            <h3 className="cursor-pointer uppercase font-semibold text-base">
+              Menu
+            </h3>
+            {toggle ? <VscChromeClose size={20} /> : <VscThreeBars size={20} />}
+          </div>
         </div>
 
-        {/* CTA Button */}
-        <button className="border border-gray-300 px-4 py-2 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition duration-300">
-          Let's talk
-        </button>
-      </div>
+        {/* Mobile Navigation */}
+        {toggle && (
+          <div className="md:hidden fixed bg-primary w-full h-[45vh] top-[3.6rem] flex flex-col items-center pt-4 z-20">
+            {[
+              { id: "home", label: "Home" },
+              { id: "about", label: "About" },
+              { id: "skills", label: "Skills" },
+              { id: "projects", label: "Portfolio" },
+              { id: "review", label: "Testimonial" },
+              { id: "contact", label: "Contact" },
+            ].map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="mb-3 text-lg font-serif font-semibold text-white capitalize"
+                onClick={() => setToggle(false)}
+              >
+                {section.label}
+              </a>
+            ))}
+            <button
+              onClick={() => setToggle(false)}
+              className="uppercase mt-3 font-serif font-semibold text-white text-[17px] border-white px-5 py-[7px] rounded-lg border"
+            >
+              <a href="" download>
+                Download CV
+              </a>
+            </button>
+          </div>
+        )}
+      </nav>
     </div>
   );
 };
