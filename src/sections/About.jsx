@@ -32,7 +32,7 @@ const About = () => {
               Download CV
             </button>
             <button className="bg-primary text-white rounded-xl py-2 px-9">
-              Hire Me
+              <a href="#contact">Hire Me</a>
             </button>
           </div>
         </div>

@@ -29,7 +29,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white py-16 font-semibold" id="skills">
+    <div className="w-full bg-white py-8 md:py-16 font-semibold" id="skills">
       <h2 className="text-center text-2xl md:text-3xl">Skills & Experiences</h2>
       <div className="w-full my-10">
         <div className="layout grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mx-auto">
@@ -37,7 +37,7 @@ const Skills = () => {
             <motion.div
               key={item.id}
               className="w-[95%] mx-auto md:w-full flex items-center h-16 md:h-20"
-              initial={{ opacity: 0, y: 30 }} // Start off-screen
+              initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} // Animate on scroll
               transition={{
                 duration: 0.5,

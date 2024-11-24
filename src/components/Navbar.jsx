@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="w-[15%]">
             <a
               href="#home"
-              className="uppercase text-primary text-xl md:text-2xl lg:text-3xl"
+              className="uppercase text-primary text-2xl lg:text-3xl"
             >
               taoheed
             </a>
@@ -83,12 +83,12 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="border border-gray-300 px-4 py-2 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition duration-300">
+          <button className="border hidden md:block border-gray-300 px-4 py-2 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition duration-300">
             Let's talk
           </button>
           {/* Mobile Menu Toggle */}
           <div
-            className="flex items-center cursor-pointer gap-2 bg-white md:hidden px-[6px] py-[3px] text-primary border-[1.9px] border-primary rounded-xl"
+            className="flex items-center cursor-pointer gap-2 bg-white md:hidden px-[7px] py-[3px] text-primary border border-[#dadada] rounded-xl"
             onClick={() => setToggle(!toggle)}
           >
             <h3 className="cursor-pointer uppercase font-semibold text-base">
@@ -118,14 +118,14 @@ const Navbar = () => {
                 {section.label}
               </a>
             ))}
-            <button
+            {/* <button
               onClick={() => setToggle(false)}
               className="uppercase mt-3 font-serif font-semibold text-white text-[17px] border-white px-5 py-[7px] rounded-lg border"
             >
               <a href="" download>
                 Download CV
               </a>
-            </button>
+            </button> */}
           </div>
         )}
       </nav>

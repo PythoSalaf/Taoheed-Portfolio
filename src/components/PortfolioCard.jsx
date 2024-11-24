@@ -10,7 +10,7 @@ const PortfolioCard = ({
   stacks = [],
 }) => {
   return (
-    <div className="w-[80%] mx-auto md:w-full rounded-xl  h-[395px]  bg-white border border-[#dadada] hover:shadow-custom transition-shadow duration-300">
+    <div className="w-[85%] mx-auto md:w-full rounded-xl h-[400px] md:h-[395px]  bg-white border border-[#dadada] hover:shadow-custom transition-shadow duration-300">
       <div className="w-[95%] mx-auto pt-[6px] pb-3">
         {/* Avatar */}
         <img

@@ -1,7 +1,7 @@
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { Profile } from "../assets";
 
-const ReviewCard = ({ name, stack, review }) => {
+const ReviewCard = ({ name, stack, review, reviewHeader }) => {
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-[90%] md:w-[300px] h-[335px] md:h-[320px] flex flex-col items-start bg-white shadow-lg  rounded-xl  pb-[1.3rem] relative">
@@ -9,7 +9,7 @@ const ReviewCard = ({ name, stack, review }) => {
           <h2 className="uppercase flex items-start ">
             <BiSolidQuoteAltLeft />
             <span className="text-lg md:text-xl font-semibold">
-              Hardworking
+              {reviewHeader}
             </span>
           </h2>
           <p className="my-4 md:my-5">{review}</p>
@@ -19,7 +19,7 @@ const ReviewCard = ({ name, stack, review }) => {
             </div>
             <div className="">
               <h3 className="uppercase text-lg font-semibold">{name}</h3>
-              <p className="text-sm">{stack}</p>
+              <p className="text-sm capitalize">{stack}</p>
             </div>
           </div>
         </div>

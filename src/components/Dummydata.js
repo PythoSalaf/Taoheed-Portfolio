@@ -54,6 +54,7 @@ export const ReviewData = [
     id: 1,
     name: "James",
     stack: "Software engineer",
+    reviewHeader: "Problem Solver",
     review:
       "Taoheed is a skilled and experience web developer with a deep understanding of how web application works. He is a creative and innovative problem solver who can come up with solutions to even the most challenging problems",
   },
@@ -61,6 +62,7 @@ export const ReviewData = [
     id: 2,
     name: "Shuaib",
     stack: "UI/UX Designer",
+    reviewHeader: "Detail-Oriented",
     review:
       "Taoheed's meticulous attention to detail and creative prowess in frontend development showcase a level of craftsmanship that sets a high standard for user-centric design.",
   },
@@ -69,6 +71,7 @@ export const ReviewData = [
     id: 3,
     name: "Yusuf",
     stack: "Product Designer",
+    reviewHeader: "Design Realizer",
     review:
       "In the years of working with Taoheed, it's really being of wonderful experience as his zeal to make my designs come into reality has always been amazing while his work rate can't be overlooked.",
   },
@@ -76,6 +79,7 @@ export const ReviewData = [
     id: 4,
     name: "Maya",
     stack: "React developer",
+    reviewHeader: "Professional",
     review:
       "I have had the pleasure of working with Taoheed on a few projects over the past few years, and I have always been impressed with his skills and professionalism.",
   },
@@ -84,8 +88,17 @@ export const ReviewData = [
     id: 5,
     name: "Dev Abdul",
     stack: "Backend developer",
+    reviewHeader: "Dedicated",
     review:
       "Hard working developer. In addition to his technical skils, Taoheed is also an excellent communicator and team player.He is always willing to go the extra mile to complete any given task.",
+  },
+  {
+    id: 6,
+    name: "Olajumoke",
+    stack: "Product Designer",
+    reviewHeader: "Innovative",
+    review:
+      "Taoheed is an innovative frontend developer. With his creativity and keen attention to detail, he constantly brings fresh ideas to the table. His coding skills are matched by his adaptability and problem-solving abilities",
   },
 ];
 export const PortfolioData = [
