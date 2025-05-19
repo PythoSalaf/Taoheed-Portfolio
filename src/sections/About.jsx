@@ -16,16 +16,15 @@ const About = () => {
           />
         </div>
         <div className="w-[94%] mx-auto md:w-full pb-6 md:pb-0 bg-white   md:h-[90vh] rounded-tl-xl">
-          <h4 className="w-[98%] md:w-[94%] mx-auto py-4 text-lg md:text-2xl">
-            My journey in the vast world of web development <br /> has been
-            centered around harnessing the power of React. <br /> From
-            conceptualization to implementation, I specialize in building
-            dynamic and responsive user interfaces that not only meet but exceed
-            expectations. My journey in the vast world of web development has
-            been centered around harnessing the power of React. From
-            conceptualization to implementation, I specialize in building
-            dynamic and responsive user interfaces that not only meet but exceed
-            expectations.
+          <h4 className="w-[90%] md:w-[92%] mx-auto py-4 md:py-6 text-lg md:text-2xl">
+            My journey in the vast world of web development has been centered
+            around harnessing the power of React. <br /> From conceptualization
+            to implementation, I specialize in building dynamic and responsive
+            user interfaces that not only meet but exceed expectations. My
+            journey in the vast world of web development has been centered
+            around harnessing the power of React. From conceptualization to
+            implementation, I specialize in building dynamic and responsive user
+            interfaces that not only meet but exceed expectations.
           </h4>
           <div className="mt-7 md:mt-20 flex items-center justify-center gap-x-6">
             <button className="bg-primary text-white rounded-xl py-2 px-4">

@@ -1,12 +1,15 @@
 import {
-  Admin,
   Ecommerce,
+  Eduflix,
   GitIcon,
+  Guardwallet,
+  Krypt,
   Movies,
   NextIcon,
   QueryIcon,
   ReactIcon,
   ReduxIcon,
+  Splitzy,
   TailwindIcon,
   TypescriptIcon,
 } from "../assets";
@@ -104,38 +107,48 @@ export const ReviewData = [
 export const PortfolioData = [
   {
     id: 1,
-    title: "Dashboard",
+    title: "Splitzy",
     detail:
-      "I designed the PsychSight Admin Dashboard, streamlining appointment management, enhancing client experience, and ensuring robust security for mental health professionals.",
-    github: "https://github.com/PythoSalaf/psych-admin",
-    livelink: "https://pytho-app.vercel.app/",
-    avater: Admin,
-    stacks: ["Tailwind CSS", "React.js", "Redux Toolkit"],
+      "Splitzy is a simple web3 bill-splitting app that lets users add friends, track payments, and calculate who owes what. ",
+    github: "https://github.com/PythoSalaf/Splitzy",
+    livelink: "https://splitzy-five.vercel.app/",
+    avater: Splitzy,
+    stacks: ["Tailwind CSS", "React.js", "Redux Toolkit", "Ether.js"],
   },
   {
     id: 2,
-    title: "Movies Web",
+    title: "Guardwallet",
     detail:
-      "The Movies App showcases significant growth in Redux, API consumption, and React development. Excited about ongoing learning, I look forward to applying these skills in future projects.",
-    github: "https://github.com/PythoSalaf/Movie-Web",
-    livelink: "https://movies-webs.vercel.app/",
-    avater: Movies,
-    stacks: ["Tailwind CSS", "React.js", "RTK Query"],
+      "A modern Web3 payment dashboard that connects crypto wallets and displays transaction data.",
+    github: "https://github.com/PythoSalaf/paymentsuidapp",
+    livelink: "https://paymentsuidapp.vercel.app/",
+    avater: Guardwallet,
+    stacks: ["Tailwind CSS", "React.js", "Context APi", "Ether.js"],
   },
 
   {
     id: 3,
-    title: "Job App",
+    title: "Eduflix",
     detail:
-      "Web application that enables users to search for job openings, and locate available jobs based on their current location.",
+      "EduFlix is a modern web3 e-learning platform UI inspired by Netflix, designed to display courses in an engaging, user-friendly layout.",
     github: "https://github.com/PythoSalaf/Job-App",
-    livelink: "https://job-app-amber.vercel.app",
-    avater: Admin,
-    stacks: ["React.js", "Styled-Component", "Rapid API", "Redux-Toolkit"],
+    livelink: "https://edu-flix.vercel.app/",
+    avater: Eduflix,
+    stacks: ["React.js", "Tailwindcss", "Context API", "Ether.js"],
   },
   {
     id: 4,
-    title: "Ecommerce",
+    title: "Krypt",
+    detail:
+      "Krypt is a Web3 app that allows users to connect their crypto wallet and send Ethereum across the blockchain.",
+    github: "https://github.com/PythoSalaf/Krypt",
+    livelink: "https://krypt-peach.vercel.app/",
+    avater: Krypt,
+    stacks: ["CSS", "React.js", "Context Api", "Solidity", "Ether.js"],
+  },
+  {
+    id: 5,
+    title: "E",
     detail:
       "Engaging e-commerce: Platform design drives 20% user engagement surge",
     github: "https://github.com/PythoSalaf/Ecommerce",
@@ -143,15 +156,42 @@ export const PortfolioData = [
     avater: Ecommerce,
     stacks: ["CSS", "React.js", "Redux-Toolkit"],
   },
-
   {
     id: 6,
-    title: "Crypto Hub",
+    title: "FundChain",
     detail:
-      "My crypto project provides a comprehensive listing of all cryptocurrencies, offering detailed information on each.",
+      "FundChain is a Web3 crowdfunding platform that enables users to create and support donation campaigns on the blockchain.",
+    github: "https://github.com/PythoSalaf/Fundchain",
+    livelink: "https://fundchain-two.vercel.app/",
+    avater: crypto,
+    stacks: [
+      "React.js",
+      "Redux",
+      "Taiwind css",
+      "Solidity",
+      "Ether.js",
+      "Framer Motion",
+    ],
+  },
+
+  {
+    id: 7,
+    title: "Movies",
+    detail:
+      "The Movies App showcases significant growth in Redux, API consumption, and React development. Excited about ongoing learning, I look forward to applying these skills in future projects.",
     github: "https://github.com/PythoSalaf/Crypto-Hub",
     livelink: "https://b-hub.netlify.app/",
-    avater: crypto,
+    avater: Movies,
+    stacks: ["React.js", "RTK Query", "Framer Motion"],
+  },
+  {
+    id: 8,
+    title: "Harven",
+    detail:
+      "Harven Estates is a real estate platform that showcases property listings with images, prices, and locations.",
+    github: "https://github.com/PythoSalaf/Harven-Estates",
+    livelink: "https://harven-estates.vercel.app/",
+    avater: Movies,
     stacks: ["React.js", "RTK Query", "Framer Motion"],
   },
 ];

@@ -41,10 +41,12 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="bg-white py-8 md:py-11" id="portfolio">
-      <h1 className="text-2xl font-semibold md:text-3xl text-center">
+    <div className="bg-white py-8 md:py-16 " id="portfolio">
+      <h1 className="text-2xl font-semibold py-8
+      md:text-3xl text-center">
         Portfolio
       </h1>
+      <div className=" "></div>
       <div className="mt-10 layout">
         <Grid />
       </div>

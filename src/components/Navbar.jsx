@@ -71,7 +71,7 @@ const Navbar = () => {
                     href={`#${section.id}`}
                     className={
                       activeSection === section.id
-                        ? "text-primary font-bold underline pb-1"
+                        ? "text-primary  underline pb-1"
                         : "text-gray-600 hover:text-primary transition-colors"
                     }
                   >
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <button className="border hidden md:block border-gray-300 px-4 py-2 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition duration-300">
-            Let's talk
+            <a href="#contact">Let's talk</a>
           </button>
           {/* Mobile Menu Toggle */}
           <div

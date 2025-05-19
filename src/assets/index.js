@@ -9,10 +9,19 @@ import QueryIcon from "./query.svg";
 import GitIcon from "./git.svg";
 import SassIcon from "./sass.svg";
 import Profile from "./profile.svg";
-import Movies from "./movies.svg";
+import Movies from "./webmovies.png";
 import Ecommerce from "./ecommerce.svg";
 import Admin from "./admin.svg";
 import Blob from "./blob.svg";
+import Guardwallet from "./Guardwallet.png";
+import Eduflix from "./Eduflix.png";
+import Fundchain from "./fundchain.png";
+import Harven from "./harven.png";
+import Krypt from "./krypt.png";
+import Skyline from "./skyline.png";
+import Splitzy from "./splitzy.png";
+import Trendx from "./trendx.png";
+import Thequiz from "./Thequiz.png";
 
 export {
   ReactIcon,
@@ -30,4 +39,13 @@ export {
   Ecommerce,
   Admin,
   Blob,
+  Guardwallet,
+  Eduflix,
+  Fundchain,
+  Harven,
+  Krypt,
+  Skyline,
+  Splitzy,
+  Trendx,
+  Thequiz,
 };
