@@ -21,7 +21,7 @@ import Krypt from "./krypt.png";
 import Skyline from "./skyline.png";
 import Splitzy from "./splitzy.png";
 import Trendx from "./trendx.png";
-import Thequiz from "./Thequiz.png";
+import Solidity from "./solidity.png";
 
 export {
   ReactIcon,
@@ -47,5 +47,5 @@ export {
   Skyline,
   Splitzy,
   Trendx,
-  Thequiz,
+  Solidity,
 };

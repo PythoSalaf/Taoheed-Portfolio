@@ -1,16 +1,19 @@
 import {
-  Ecommerce,
   Eduflix,
+  Fundchain,
   GitIcon,
   Guardwallet,
+  Harven,
   Krypt,
   Movies,
   NextIcon,
   QueryIcon,
   ReactIcon,
   ReduxIcon,
+  Solidity,
   Splitzy,
   TailwindIcon,
+  Trendx,
   TypescriptIcon,
 } from "../assets";
 
@@ -22,31 +25,36 @@ export const SkillsData = [
   },
   {
     id: 2,
+    name: "Solidity",
+    icon: Solidity,
+  },
+  {
+    id: 3,
     name: "Redux",
     icon: ReduxIcon,
   },
   {
-    id: 3,
+    id: 4,
     name: "Tailwind Css",
     icon: TailwindIcon,
   },
   {
-    id: 4,
+    id: 5,
     name: "Typescript",
     icon: TypescriptIcon,
   },
   {
-    id: 5,
+    id: 6,
     name: "Next js",
     icon: NextIcon,
   },
   {
-    id: 6,
+    id: 7,
     name: "React Query",
     icon: QueryIcon,
   },
   {
-    id: 7,
+    id: 8,
     name: "Git",
     icon: GitIcon,
   },
@@ -131,7 +139,7 @@ export const PortfolioData = [
     title: "Eduflix",
     detail:
       "EduFlix is a modern web3 e-learning platform UI inspired by Netflix, designed to display courses in an engaging, user-friendly layout.",
-    github: "https://github.com/PythoSalaf/Job-App",
+    github: "https://github.com/PythoSalaf/EduFlix",
     livelink: "https://edu-flix.vercel.app/",
     avater: Eduflix,
     stacks: ["React.js", "Tailwindcss", "Context API", "Ether.js"],
@@ -148,22 +156,22 @@ export const PortfolioData = [
   },
   {
     id: 5,
-    title: "E",
+    title: "Trend X",
     detail:
-      "Engaging e-commerce: Platform design drives 20% user engagement surge",
-    github: "https://github.com/PythoSalaf/Ecommerce",
-    livelink: "https://ecommerce-tao.vercel.app",
-    avater: Ecommerce,
-    stacks: ["CSS", "React.js", "Redux-Toolkit"],
+      "BEE is an AI-powered crypto research tool that analyzes Twitter data to help users make smarter market decisions.",
+    github: "https://github.com/PythoSalaf/TrendX",
+    livelink: "https://trend-x-six.vercel.app/",
+    avater: Trendx,
+    stacks: ["Tailwind CSS", "React.js", "Context Api", "Ether.js"],
   },
   {
     id: 6,
     title: "FundChain",
     detail:
-      "FundChain is a Web3 crowdfunding platform that enables users to create and support donation campaigns on the blockchain.",
+      "FundChain is a Web3 crowdfunding platform that enables users to create and support donation campaigns.",
     github: "https://github.com/PythoSalaf/Fundchain",
     livelink: "https://fundchain-two.vercel.app/",
-    avater: crypto,
+    avater: Fundchain,
     stacks: [
       "React.js",
       "Redux",
@@ -178,11 +186,11 @@ export const PortfolioData = [
     id: 7,
     title: "Movies",
     detail:
-      "The Movies App showcases significant growth in Redux, API consumption, and React development. Excited about ongoing learning, I look forward to applying these skills in future projects.",
-    github: "https://github.com/PythoSalaf/Crypto-Hub",
-    livelink: "https://b-hub.netlify.app/",
+      "The Movies App showcases significant growth in Redux, API consumption, and React development.",
+    github: "https://github.com/PythoSalaf/Movie-Web",
+    livelink: "https://movies-webs.vercel.app/",
     avater: Movies,
-    stacks: ["React.js", "RTK Query", "Framer Motion"],
+    stacks: ["React.js", "RTK Query", "Styled Component"],
   },
   {
     id: 8,
@@ -191,7 +199,7 @@ export const PortfolioData = [
       "Harven Estates is a real estate platform that showcases property listings with images, prices, and locations.",
     github: "https://github.com/PythoSalaf/Harven-Estates",
     livelink: "https://harven-estates.vercel.app/",
-    avater: Movies,
-    stacks: ["React.js", "RTK Query", "Framer Motion"],
+    avater: Harven,
+    stacks: ["React.js", "RTK Query", "Tailwind CSS"],
   },
 ];

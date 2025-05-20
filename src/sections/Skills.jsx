@@ -29,7 +29,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white py-8 md:py-16 font-semibold" id="skills">
+    <div
+      className="w-full bg-white py-8 md:pt-16 md:pb-5  font-semibold"
+      id="skills"
+    >
       <h2 className="text-center text-2xl md:text-3xl">Skills & Experiences</h2>
       <div className="w-full my-10">
         <div className="layout grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mx-auto">

